@@ -231,6 +231,7 @@ function ClerkProviderWithRoutes() {
               <Show when="signed-out"><Redirect to="/" /></Show>
             </>
           )} />
+          <Route component={() => <Redirect to="/" />} />
         </Switch>
         <Toaster />
       </QueryClientProvider>
