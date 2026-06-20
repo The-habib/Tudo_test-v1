@@ -1,0 +1,1 @@
+- [TODU migration decisions](todu-migration.md) — wouter replaces react-router-dom; AppLayout uses children prop; Tailwind v3 via PostCSS only
