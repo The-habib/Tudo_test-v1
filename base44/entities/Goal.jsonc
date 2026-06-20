@@ -1,0 +1,26 @@
+{
+  "name": "Goal",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Goal name"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icon URL"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "doing",
+        "finished",
+        "abandon"
+      ],
+      "default": "doing"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Habit",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Habit name"
+    },
+    "streak_days": {
+      "type": "number",
+      "default": 0,
+      "description": "Current streak in days"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icon URL for the habit"
+    },
+    "color": {
+      "type": "string",
+      "default": "#C5D86D"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

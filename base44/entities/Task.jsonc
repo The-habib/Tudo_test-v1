@@ -1,0 +1,41 @@
+{
+  "name": "Task",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Task title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Task description"
+    },
+    "time": {
+      "type": "string",
+      "description": "Scheduled time (e.g. 8:00 AM)"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "daily",
+        "project"
+      ],
+      "default": "daily"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "completed"
+      ],
+      "default": "pending"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
